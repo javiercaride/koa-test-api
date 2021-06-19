@@ -1,8 +1,6 @@
 {
   "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
-    "lib": ["es6"],
-    "target": "es6",
     "declaration": true,
     "sourceMap": true,
     "outDir": "dist",
@@ -10,6 +8,6 @@
       "node_modules/@types"
     ],
   },
-  "include": ["./src"],
-  "exclude": ["./node_modules"]
+  "include": ["src"],
+  "exclude": ["node_modules", "tests"]
 }
